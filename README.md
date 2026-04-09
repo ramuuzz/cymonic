@@ -2,6 +2,11 @@
 
 > **AI-powered meeting transcript analysis** — automatically extract decisions, action items, sentiment, and answer questions about your meetings using Google Gemini.
 
+### 🌐 Live Demo
+You can access the live version of the application here: **[Open Meeting Hub](https://cymonic-jtlhwdelybdcj9jmuk82kq.streamlit.app/)**
+- **Frontend** is deployed on Streamlit Community Cloud.
+- **Backend API** is hosted on an AWS instance.
+
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.39-FF4B4B?logo=streamlit&logoColor=white)
