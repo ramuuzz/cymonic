@@ -8,7 +8,7 @@ import time
 from dotenv import load_dotenv
 
 load_dotenv()
-API_BASE = os.getenv("FASTAPI_BASE_URL", "http://localhost:8000")
+API_BASE = os.getenv("FASTAPI_BASE_URL", "http://13.60.67.152:8000")
 
 st.set_page_config(page_title="Upload | Meeting Hub", page_icon="📤", layout="wide")
 
