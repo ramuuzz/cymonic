@@ -1,0 +1,25 @@
+# ── Backend (FastAPI) ──────────────────────────────────────────────────────────
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+sqlalchemy==2.0.35
+alembic==1.13.2
+python-multipart==0.0.12
+python-dotenv==1.0.1
+
+# ── AI / LLM ───────────────────────────────────────────────────────────────────
+google-genai==1.10.0          # Gemini API (primary AI provider)
+openai==1.51.0                # OpenAI (optional fallback)
+numpy==1.26.4                 # Required for RAG embedding cosine similarity
+
+# ── Export ─────────────────────────────────────────────────────────────────────
+fpdf2==2.8.1
+pandas==2.2.3
+
+# ── Frontend (Streamlit) ───────────────────────────────────────────────────────
+streamlit==1.39.0
+requests==2.32.3
+plotly==5.24.1
+
+# ── Local NLP (offline fallback — no API key needed) ──────────────────────────
+vaderSentiment==3.3.2
+scikit-learn==1.5.2
