@@ -16,7 +16,6 @@ We selected a stack optimized for rapid iteration, strong typing, robust error h
 * **Streamlit (Frontend)**: Selected to enable rapid prototyping of data-heavy, analytical interfaces without the overhead of building a full React frontend from scratch. It handles data visualizations (Plotly) and chat interfaces natively.
 * **Google Gemini API (AI Provider)**: Chosen for its robust reasoning, large context windows, and cost-effectiveness via its generous free tier, making it ideal for processing long meeting transcripts continuously during trials.
 * **SQLite (Database)**: Migrated from PostgreSQL to SQLite to dramatically simplify the local setup process for evaluators. It guarantees zero-dependency local runs on Windows, macOS, and Linux without requiring Docker. 
-* **Local NLP Fallback (VADER & Scikit-Learn)**: Implemented as an offline fallback strategy to ensure the application remains functional even in environments without valid API keys.
 
 ## 3. Future Improvements (With More Time)
 If granted additional time or transitioning this to a production-ready application, we would prioritize the following improvements:

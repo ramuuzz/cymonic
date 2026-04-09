@@ -53,7 +53,7 @@ cymonic-2/
 │       ├── 3_Meeting_Detail.py# Per-transcript extraction & sentiment
 │       └── 4_Chatbot.py       # AI Q&A chatbot UI
 ├── .env.example               # ← copy this to .env and fill in your keys
-├── requirements.txt           # All Python dependencies
+├── requirements.txt           # Frontend Python dependencies
 └── .gitignore
 ```
 
@@ -88,7 +88,8 @@ source .venv/bin/activate
 ### 4 — Install dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt           # Frontend
+pip install -r backend/requirements.txt   # Backend
 ```
 
 ### 5 — Configure environment variables
@@ -199,8 +200,9 @@ Full interactive docs available at **http://localhost:8000/docs** when the serve
 
 ## 📋 Dependencies
 
-All dependencies are pinned in [`requirements.txt`](./requirements.txt).
+Dependencies are explicitly split into frontend and backend files.
 
+### Backend (`backend/requirements.txt`)
 | Package | Purpose |
 |---|---|
 | `fastapi` | REST API framework |
@@ -208,12 +210,17 @@ All dependencies are pinned in [`requirements.txt`](./requirements.txt).
 | `sqlalchemy` | ORM / database layer |
 | `google-genai` | Gemini API client |
 | `numpy` | Cosine similarity for RAG |
-| `streamlit` | Frontend UI framework |
-| `plotly` | Interactive charts |
 | `fpdf2` | PDF export |
 | `pandas` | CSV export & data handling |
 | `vaderSentiment` | Local sentiment (offline mode) |
 | `scikit-learn` | TF-IDF extraction (offline mode) |
+
+### Frontend (`requirements.txt`)
+| Package | Purpose |
+|---|---|
+| `streamlit` | Frontend UI framework |
+| `plotly` | Interactive charts |
+| `requests` | Backend API communication |
 
 
 
