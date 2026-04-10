@@ -33,7 +33,7 @@ You can access the live version of the application here: **[Open Meeting Hub](ht
 ## 🏗️ Project Structure
 
 ```
-cymonic-2/
+cymonic/
 ├── backend/                   # FastAPI application
 │   ├── main.py                # App entry point, router registration
 │   ├── database.py            # SQLAlchemy engine, session, Base
@@ -74,8 +74,8 @@ cymonic-2/
 ### 2 — Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/cymonic-2.git
-cd cymonic-2
+git clone https://github.com/<your-username>/cymonic.git
+cd cymonic
 ```
 
 ### 3 — Create and activate a virtual environment
