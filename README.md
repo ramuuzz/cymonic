@@ -3,7 +3,7 @@
 > **AI-powered meeting transcript analysis** — automatically extract decisions, action items, sentiment, and answer questions about your meetings using Google Gemini.
 
 ### 🌐 Live Demo
-You can access the live version of the application here: **[Open Meeting Hub](https://cymonic-jtlhwdelybdcj9jmuk82kq.streamlit.app/)**
+You can access the live version of the application here: **[Open Meeting Hub](https://cymonic-hru3qjhvcnt8drxb5v9dqm.streamlit.app/)**
 - **Frontend** is deployed on Streamlit Community Cloud.
 - **Backend API** is hosted on an AWS instance.
 
@@ -33,7 +33,7 @@ You can access the live version of the application here: **[Open Meeting Hub](ht
 ## 🏗️ Project Structure
 
 ```
-cymonic-2/
+cymonic/
 ├── backend/                   # FastAPI application
 │   ├── main.py                # App entry point, router registration
 │   ├── database.py            # SQLAlchemy engine, session, Base
@@ -74,8 +74,8 @@ cymonic-2/
 ### 2 — Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/cymonic-2.git
-cd cymonic-2
+git clone https://github.com/<your-username>/cymonic.git
+cd cymonic
 ```
 
 ### 3 — Create and activate a virtual environment
@@ -108,7 +108,7 @@ Open `.env` and set **at minimum**:
 
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
-AI_MODE=gemini
+
 ```
 
 > See [Environment Variables](#-environment-variables) for all available options.
@@ -138,7 +138,7 @@ Copy `.env.example` → `.env` and populate the values below.
 
 | Variable | Required | Default | Description |
 |---|---|---|---|
-| `GEMINI_API_KEY` | ✅ (for AI mode) | — | Google Gemini API key |
+| `GEMINI_API_KEY` | ✅  | — | Google Gemini API key |
 
 | `DATABASE_URL` | ❌ | `sqlite:///meeting_hub.db` | SQLAlchemy DB connection string |
 | `FASTAPI_BASE_URL` | ❌ | `http://localhost:8000` | URL the frontend uses to reach the API |
@@ -146,9 +146,7 @@ Copy `.env.example` → `.env` and populate the values below.
 
 ---
 
-## 🚀 Running in Offline / No-API Mode
 
-Set `AI_MODE=nlp` in your `.env` to use **local VADER sentiment** and **TF-IDF extraction** — no internet or API key required. Accuracy is reduced compared to Gemini mode.
 
 ---
 
