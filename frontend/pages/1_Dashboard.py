@@ -10,7 +10,7 @@ import pandas as pd
 from dotenv import load_dotenv
 
 load_dotenv()
-API_BASE = os.getenv("FASTAPI_BASE_URL", "http://13.60.67.152:8000")
+API_BASE = os.getenv("FASTAPI_BASE_URL", "https://cymonic-latest.onrender.com")
 
 st.set_page_config(page_title="Dashboard | Meeting Hub", page_icon="📊", layout="wide")
 

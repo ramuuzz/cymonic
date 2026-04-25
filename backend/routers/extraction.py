@@ -35,7 +35,7 @@ def run_extraction(transcript_id: str, db: Session = Depends(get_db)):
             transcript_id=transcript_id,
             type=ActionItemType.decision,
             owner=d.get("owner"),
-            description=d["description"],
+            description=d.get("description", "No description provided"),
             due_date=d.get("due_date"),
         )
         db.add(item)
@@ -46,7 +46,7 @@ def run_extraction(transcript_id: str, db: Session = Depends(get_db)):
             transcript_id=transcript_id,
             type=ActionItemType.action_item,
             owner=a.get("owner", "Unassigned"),
-            description=a["description"],
+            description=a.get("description", "No description provided"),
             due_date=a.get("due_date"),
         )
         db.add(item)
