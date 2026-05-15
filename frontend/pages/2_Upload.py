@@ -8,7 +8,7 @@ import time
 from dotenv import load_dotenv
 
 load_dotenv()
-API_BASE = os.getenv("FASTAPI_BASE_URL", "https://cymonic-latest.onrender.com")
+API_BASE = os.getenv("FASTAPI_BASE_URL", "https://cymonic-latest-1.onrender.com")
 
 st.set_page_config(page_title="Upload | Meeting Hub", page_icon="📤", layout="wide")
 
