@@ -1,0 +1,241 @@
+Google Meet — Auto-generated Transcript
+────────────────────────────────────────────────────────────────────────────────
+Meeting: Q2 Product Roadmap & Team Sync
+Date:    Friday, May 15, 2026
+Link:    meet.google.com/qrt-bnxw-jdf
+────────────────────────────────────────────────────────────────────────────────
+Participants (7):
+  Sarah Mitchell, Arjun Nair, Priya Menon, Daniel Carter,
+  Fatima Al-Rashid, Tom Nguyen, Lena Hoffmann
+────────────────────────────────────────────────────────────────────────────────
+
+
+10:01:04  Sarah Mitchell
+          Okay I think most people are in now, let me just check — Lena are
+          you there? I can see you joined but your mic might be muted.
+
+10:01:18  Lena Hoffmann
+          Oh sorry yeah I was on mute, can you hear me now?
+
+10:01:22  Sarah Mitchell
+          Yeah perfect, alright let's get started. So good morning everyone,
+          thanks for joining. Quick heads-up this meeting is being recorded
+          and transcribed. We've got a lot to cover so let's try to stay on
+          track. I'll share my screen in a second. Um, first things first —
+          Q1 recap.
+
+10:02:05  Sarah Mitchell
+          So overall Q1 was pretty solid. We shipped three out of the four
+          major features we had planned. The Smart Dashboard was the one
+          that slipped — it was supposed to go out March 30th but we ended
+          up pushing it to April 12th. That's been fully deployed now and
+          the feedback's been good so I think we're okay on that front.
+
+10:02:41  Arjun Nair
+          Yeah I just want to add — the client-side feedback on the dashboard
+          has actually been really positive. I got a few emails last week,
+          I can forward them to the thread if that's useful.
+
+10:02:53  Sarah Mitchell
+          That'd be great yeah, please do. Okay so for Q2, our theme is
+          basically Performance and User Experience. I'll send out the full
+          brief after this call but the headline items are the API refactor,
+          the mobile redesign, and getting the OAuth module shipped.
+          Priya do you want to give us a quick dev update?
+
+10:03:20  Priya Menon
+          Sure. So the API refactoring — Phase 1 — is about 80 percent done.
+          We're on track to finish that by May 22nd. After that the team is
+          moving straight onto the OAuth 2.0 authentication module. We're
+          planning to kick that off May 19th and the target is June 5th for
+          delivery.
+
+10:03:48  Daniel Carter
+          Sorry to jump in — is the OAuth work going to affect the mobile
+          flows at all? Just thinking about the new onboarding screens.
+
+10:03:57  Priya Menon
+          Good question. There'll be some overlap, yeah. We should probably
+          sync on that separately, maybe early next week?
+
+10:04:05  Daniel Carter
+          Yeah works for me, I'll drop you a calendar invite.
+
+10:04:09  Priya Menon
+          Perfect. The other thing I want to flag — and I've mentioned this
+          before — we have some legacy code dependencies that are going to
+          become a real problem if we don't deal with them soon. I'd like
+          to get a dedicated spike session on the calendar, like a two-hour
+          block, with me and the backend team.
+
+10:04:30  Sarah Mitchell
+          Okay let's make that happen. Arjun can you find a slot the week
+          of May 26th and get that scheduled?
+
+10:04:37  Arjun Nair
+          On it, I'll send out an invite by end of day.
+
+10:04:41  Sarah Mitchell
+          Great. Daniel, do you want to walk us through the redesign?
+
+10:04:47  Daniel Carter
+          Yeah absolutely. So I've been working on the Mobile Redesign v2
+          and I shared the Figma link in the chat — everyone should have
+          access now. The big changes are basically three things. First,
+          the bottom nav bar is expanding from three tabs to five so we
+          can surface more features without burying them in menus. Second,
+          we've cut the onboarding flow from seven steps down to four which
+          I think is going to make a huge difference for drop-off rates.
+          And third, we've done a full accessibility pass — contrast ratios
+          are now WCAG AA compliant across the board.
+
+10:05:38  Fatima Al-Rashid
+          That's great to hear on the accessibility side, that was a long
+          time coming honestly.
+
+10:05:44  Daniel Carter
+          Yeah 100%. So I'm targeting design sign-off by May 28th. I need
+          everyone to go through the prototype and leave comments in Figma
+          by May 21st — that gives me a week to action feedback before
+          the deadline.
+
+10:06:02  Lena Hoffmann
+          I'll flag it in my calendar. Is there a specific flow you want
+          us to focus on or just everything?
+
+10:06:09  Daniel Carter
+          Honestly everything if you can, but if you're short on time
+          prioritise the onboarding and the new home screen.
+
+10:06:16  Sarah Mitchell
+          Okay noted. Fatima, QA update?
+
+10:06:21  Fatima Al-Rashid
+          Yeah so Q1 was a good quarter for us. Bug closure rate hit 94
+          percent, our target was 90 so we beat it which is nice. But
+          there are two critical bugs still open from Q1 that I want to
+          call out. BUG-4821 is a data sync failure on iOS 17.x devices
+          and BUG-4899 is incorrect currency formatting for EU locales.
+          Both are sitting with the dev team waiting on review.
+
+10:06:52  Priya Menon
+          Yeah I'm aware of those, I'm planning to look at 4821 today
+          actually. 4899 might need to go to the localization team as well.
+
+10:07:02  Fatima Al-Rashid
+          Yeah agreed. The other thing I want to propose is rolling out
+          automated regression testing using Playwright — we'd start that
+          in Sprint 6 which kicks off June 1st. Priya I'll need us to
+          align on the test environment setup before then.
+
+10:07:20  Priya Menon
+          Let's say May 23rd for that?
+
+10:07:23  Fatima Al-Rashid
+          Works for me, I'll book something.
+
+10:07:27  Sarah Mitchell
+          Perfect. Tom, over to you for marketing.
+
+10:07:33  Tom Nguyen
+          Thanks Sarah. So the Q2 campaign is called "Built for You" and
+          the focus is really on showing how personalised the product
+          experience is. Here's the rough timeline — creative assets will
+          be ready June 2nd, we're doing a social media soft launch on
+          June 9th, the full campaign goes live June 16th, and then we're
+          doing a post-campaign analytics review the week of July 7th.
+
+10:08:05  Tom Nguyen
+          One thing I really need from the team — a short product demo
+          video. Something like 60 to 90 seconds, showing the key features.
+          I need that by May 30th to get it into the campaign assets in time.
+
+10:08:22  Daniel Carter
+          I can pull something together with screen recordings. Priya would
+          you be able to help with a live demo environment for that?
+
+10:08:30  Priya Menon
+          Yeah I can set up a clean demo instance, no problem.
+
+10:08:34  Tom Nguyen
+          Amazing, thank you both. Oh also — and this is a heads-up more
+          than anything — we're going to be pushing more traffic to the app
+          from mid-June, so if there are any performance concerns on the
+          backend that's probably the window you'd want to keep in mind.
+
+10:08:52  Priya Menon
+          Noted. We'll make sure the API refactor is solid before then.
+
+10:08:58  Sarah Mitchell
+          Good point. Lena, anything from the data side?
+
+10:09:04  Lena Hoffmann
+          Just briefly — I've been looking at the retention numbers from Q1
+          and there's a noticeable drop-off at the seven-day mark for new
+          users. I think it's linked to the onboarding experience so Daniel's
+          redesign should help. I'll put together a proper report by May 20th
+          and share it with everyone so we have the data going into the
+          design review.
+
+10:09:31  Daniel Carter
+          That would actually be super helpful, thank you.
+
+10:09:34  Sarah Mitchell
+          Great, okay. Let me just run through the actions before we close
+          out. Arjun can you take note of these?
+
+10:09:41  Arjun Nair
+          Already on it.
+
+10:09:43  Sarah Mitchell
+          Perfect. So — Arjun is scheduling the tech spike session for the
+          week of May 26th. Everyone needs to review the Figma prototype
+          and comment by May 21st. Priya and Fatima are syncing on the test
+          environment by May 23rd. Daniel and Priya are coordinating the
+          demo video by May 30th. Lena's sharing the retention report by
+          May 20th. And the next big checkpoint is the stakeholder review
+          on June 10th at 2pm IST — make sure that's in your calendars.
+
+10:10:24  Tom Nguyen
+          Quick one — is that June 10th meeting going to be recorded as well?
+
+10:10:29  Sarah Mitchell
+          Yes it will be, and we'll send the deck out in advance. Okay I
+          think that covers everything. Thanks all, have a good rest of
+          your Friday!
+
+10:10:39  Priya Menon
+          Thanks everyone.
+
+10:10:41  Fatima Al-Rashid
+          Cheers, bye.
+
+10:10:43  Lena Hoffmann
+          Bye!
+
+10:10:44  Daniel Carter
+          See you all.
+
+10:10:46  Tom Nguyen
+          Thanks, bye.
+
+10:10:48  Arjun Nair
+          Bye everyone.
+
+
+────────────────────────────────────────────────────────────────────────────────
+Transcript ended  · 10:10:51
+Duration          · 1 hr 9 min 47 sec
+────────────────────────────────────────────────────────────────────────────────
+                 Action Items (auto-detected)
+────────────────────────────────────────────────────────────────────────────────
+  ○  Arjun Nair        — Schedule tech spike session (week of May 26, 2026)
+  ○  All               — Review Figma prototype & comment by May 21, 2026
+  ○  Priya + Fatima    — Align on test environment setup by May 23, 2026
+  ○  Daniel + Priya    — Produce product demo video by May 30, 2026
+  ○  Lena Hoffmann     — Share Q1 retention report by May 20, 2026
+  ○  All               — Stakeholder Review · June 10, 2026 @ 2:00 PM IST
+────────────────────────────────────────────────────────────────────────────────
+This transcript was automatically generated by Google Meet.
+Accuracy may vary. Review before sharing or distributing.
+────────────────────────────────────────────────────────────────────────────────

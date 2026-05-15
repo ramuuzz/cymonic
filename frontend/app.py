@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_BASE = os.getenv("FASTAPI_BASE_URL", "https://cymonic-latest.onrender.com")
+API_BASE = os.getenv("FASTAPI_BASE_URL", "https://cymonic-latest-1.onrender.com")
 
 st.set_page_config(
     page_title="Meeting Intelligence Hub",
@@ -127,11 +127,7 @@ with st.sidebar:
 
     st.markdown("---")
 
-    # AI mode indicator
-    
 
-
-# ── Main Content ─────────────────────────────────────
 st.markdown("""
 <div class="main-header">
     <h1>🧠 Meeting Intelligence Hub</h1>
